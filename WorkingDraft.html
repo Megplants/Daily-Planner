@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Daily Planner</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="Daily_Planner.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />   
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="description" content="Daily Planner">
+<meta name="keywords" content="Daily Planner, schedule, task list, to do list, priority list">
+<meta name="author" content="Meghan Engel">
+
+
+<script language = "javascript" type="text/javascript">
+
+    dayName = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday")
+    monName = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December")
+    
+    now = new Date 
+    
+    </script> 
+    
+</head>
+<body>
+ 
+    <!-- Header- should have a date that sets automatically and the title of "Daily Planner" -->
+<header>
+    
+   <div name="date" class="date">
+    <h3 id="date" class="date_text"></h3>
+    <script language = "javascript" type="text/javascript" id="date" >
+
+
+document.getElementById("date").innerHTML = (dayName[now.getDay()] + ", " + monName[now.getMonth()] + " " + now.getDate() + ", " + now.getFullYear() ) ;
+        
+        </script></div>
+        <div class="header_title" id="header_title">
+            
+            <h1 class="title" id="title">Daily Planner</h1></div>
+</header>
+
+<!--Schedule section; should display on left side of screen-->
+<div class="col-3">
+<section name="schedule_sec" class="schedule_sec" id="schedule_sec">
+  
+    <table name="schedule" class="schedule" id="schedule">
+<thead>
+    <td colspan="2" style="text-align: center;"><h2>Schedule</h2></td>
+</thead>
+    <tr>
+        <td>8:00am</td>
+        <td><input type="text">
+        </td>
+    </tr>
+    <tr>
+        <td> </td>
+        <td><input type="text">
+        </td>
+    </tr>
+    <tr>
+        <td> </td>
+        <td><input type="text">
+        </td>
+    </tr>
+    <tr>
+        <td> </td>
+        <td><input type="text">
+        </td>
+    </tr>
+    <tr><td>9:00am</td>
+        <td><input type="text">
+        </td></tr>
+    <tr>
+        <td> </td>
+        <td><input type="text">
+        </td></tr>
+    <tr>
+        <td> </td>
+        <td><input type="text">
+        </td></tr>
+    <tr>
+        <td> </td>
+        <td><input type="text">
+        </td></tr>
+    <tr>
+        <td>10:00am</td>
+        <td><input type="text">
+        </td></tr>
+    <tr>
+        <td> </td>
+        <td><input type="text">
+        </td></tr>
+    <tr>
+        <td> </td>
+        <td><input type="text">
+        </td></tr>
+    <tr>
+        <td> </td>
+        <td><input type="text">
+        </td></tr>
+    <tr>
+        <td>11:00am</td>
+        <td><input type="text">
+        </td></tr>
+    <tr>
+        <td> </td>
+        <td><input type="text">
+        </td></tr>
+    <tr>
+        <td> </td>
+        <td><input type="text">
+        </td></tr>
+    <tr>
+        <td> </td>
+        <td><input type="text">
+        </td></tr>
+    <tr>
+        <td>12:00pm</td>
+        <td><input type="text">
+        </td></tr>
+    <tr>
+        <td> </td>
+        <td><input type="text">
+        </td></tr>
+    <tr>
+        <td> </td>
+        <td><input type="text">
+        </td></tr>
+    <tr>
+        <td> </td>
+        <td><input type="text">
+        </td></tr>
+    <tr>
+        <td>1:00pm</td>
+        <td><input type="text">
+        </td></tr>
+    <tr>
+        <td> </td>
+        <td><input type="text">
+        </td></tr>
+    <tr>
+        <td> </td>
+        <td><input type="text">
+        </td></tr>
+    <tr>
+        <td> </td>
+        <td><input type="text">
+        </td></tr>
+    <tr>
+        <td>2:00pm</td>
+        <td><input type="text">
+        </td></tr>
+    <tr>
+        <td> </td>
+        <td><input type="text">
+        </td></tr>
+    <tr>
+        <td> </td>
+        <td><input type="text">
+        </td></tr>
+    <tr>
+        <td> </td>
+        <td><input type="text">
+        </td></tr>
+    <tr>
+        <td>3:00pm</td>
+        <td><input type="text">
+        </td></tr>
+    <tr>
+        <td> </td>
+        <td><input type="text">
+        </td></tr>
+    <tr>
+        <td> </td>
+        <td><input type="text">
+        </td></tr>
+    <tr>
+        <td> </td>
+        <td><input type="text">
+        </td></tr>
+    <tr>
+        <td>4:00pm</td>
+        <td><input type="text">
+        </td></tr>
+    <tr>
+        <td> </td>
+        <td><input type="text">
+        </td></tr>
+    <tr>
+        <td> </td>
+        <td><input type="text">
+        </td></tr>
+    <tr>
+        <td> </td>
+        <td><input type="text">
+        </td></tr>
+        <tr>
+            <td>5:00pm</td>
+            <td><input type="text">
+            </td></tr>
+        <tr>
+            <td> </td>
+            <td><input type="text">
+            </td></tr>
+        <tr>
+            <td> </td>
+            <td><input type="text">
+            </td></tr>
+        <tr>
+            <td> </td>
+            <td><input type="text">
+            </td></tr>
+</table>
+
+</section>
+</div>
+<!--Priority Section; should display middle of screen-->
+<div class="col-3">
+<section name="priority_visual" class="priority_visual" id="priority_visual">
+
+    <h2 style="width: 200px;text-align: center;">Priorities</h2>
+    <div name="prioritybox1" class="prioritybox1" id="prioritybox1" style="height: 120px;width: 200px;color: rgb(61, 60, 60); background-color: rgba(240, 128, 128, 0.731);text-align: center;border-radius: 20%;margin:10px">Priority I</div>
+    <div name="prioritybox2" class="prioritybox2" id="prioritybox2" style="height: 120px;width: 200px;color: rgb(61, 60, 60);background-color: rgba(0, 255, 255, 0.719);text-align: center;border-radius: 20%; margin:10px ;">Priority II</div>
+    <div name="prioritybox3" class="prioritybox3" id="prioritybox3" style="height: 120px;width: 200px;color: rgb(61, 60, 60);background-color: rgba(172, 255, 47, 0.741);text-align: center;border-radius: 20%;margin: 10px;">Priority III</div>
+
+</section></div>
+<!--To Do List Section; should display on right side of screen-->
+<section name="todolistsec" class="todolistsec" id="todolistsec">
+    <div class="col-6">
+    <table name="todolist" class="todolist" id="todolist">
+        
+            <thead >
+                <th colspan="4" style="text-align: center;"><h1>To Do</h1></th>
+            </thead>
+        
+        <tr>
+            <th>Priority</th>
+            <th >Time Allotted</th>
+            <th >Task</th>
+            <th >Info</th>
+        </tr>
+        <tr>
+            <td class="priority">
+                <div class="info_button"> <button class="button" oncl> <i class="material-symbols-outlined">star</i></button>
+                    
+                <select id="priority">
+                   
+                    <option value="I"><span class="material-symbols-outlined" id="filled">star</span></option>
+                    <option value="II"><span class="material-symbols-outlined">star_half</span></option>
+                    <option value="III"><span class="material-symbols-outlined">star</span></option></div></div>
+                </select>
+            </td>
+            <td class="time">
+                <div class="info_button"> <button class="button"> <i class="material-icons">schedule</i></button>
+                    <div class="dropdown_file">
+                <input type="checkbox"><label value="allday">All day</label><br>
+
+                <input type="number" id="timeAllotted_hours" name="timeAllotted_hours" min="0" max="8" placeholder="hrs">
+                <label for="timeAllotted_hours">hrs</label><br>
+
+                <input type="number" id="timeAllotted_minutes" name="timeAllotted_minutes" min="0" max="59" placeholder="mins">  
+                <label for="timeAllotted_minutes">mins</label></div></div>
+            </td>
+            <td class="task">
+                <input type="checkbox">
+                <input type="text">
+            </td>
+            <td class="info">
+               <div class="info_button"> <button class="button"> <i class="material-icons">attachment</i></button>
+                <div class="dropdown_file">
+                    <input type="file">
+                </div>
+            </div>
+                
+                <div class="info_button"> <button class="button"> <i class="material-icons">link</i></button>
+                    <div class="dropdown_file">
+                        <input type="url" placeholder="URL">
+                    </div>
+                </div>
+                
+            </td>
+        </tr>
+<tr>
+            <td class="priority">
+                <select>
+                    <option value="I">I</option>
+                    <option value="II">II</option>
+                    <option value="III">III</option>
+                </select>
+            </td>
+            <td class="time">
+                <div class="info_button"> <button class="button"> <i class="material-icons">schedule</i></button>
+                    <div class="dropdown_file">
+                <input type="checkbox"><label value="allday">All day</label><br>
+
+                <input type="number" id="timeAllotted_hours" name="timeAllotted_hours" min="0" max="8" placeholder="hrs">
+                <label for="timeAllotted_hours">hrs</label><br>
+
+                <input type="number" id="timeAllotted_minutes" name="timeAllotted_minutes" min="0" max="59" placeholder="mins">  
+                <label for="timeAllotted_minutes">mins</label>
+                </div></div>
+            </td>
+            <td class="task">
+                <input type="checkbox">
+                <input type="text">
+            </td>
+            <td class="info">
+                <div class="info_button"> <button class="button"> <i class="material-icons">attachment</i></button>
+                    <div class="dropdown_file">
+                        <input type="file">
+                    </div>
+                </div>
+                    
+                    <div class="info_button"> <button class="button"> <i class="material-icons">link</i></button>
+                        <div class="dropdown_file">
+                            <input type="url" placeholder="URL">
+                        </div>
+                    </div>
+            </td>
+        </tr>
+    <tr>
+            <td class="priority">
+                <select>
+                    <option value="I">I</option>
+                    <option value="II">II</option>
+                    <option value="III">III</option>
+                </select>
+            </td>
+            <td class="time">
+                <input type="checkbox"><label value="allday">All day</label><br>
+
+                <input type="number" id="timeAllotted_hours" name="timeAllotted_hours" min="0" max="8" placeholder="hrs">
+                <label for="timeAllotted_hours">hrs</label><br>
+
+                <input type="number" id="timeAllotted_minutes" name="timeAllotted_minutes" min="0" max="59" placeholder="mins">  
+                <label for="timeAllotted_minutes">mins</label>
+            </td>
+            <td class="task">
+                <input type="checkbox">
+                <input type="text">
+            </td>
+            <td class="info">
+                <div class="info_button"> <button class="button"> <i class="material-icons">attachment</i></button>
+                    <div class="dropdown_file">
+                        <input type="file">
+                    </div>
+                </div>
+                    
+                    <div class="info_button"> <button class="button"> <i class="material-icons">link</i></button>
+                        <div class="dropdown_file">
+                            <input type="url" placeholder="URL">
+                        </div>
+                    </div>
+            </td>
+        </tr>
+    <tr>
+            <td class="priority">
+                <select>
+                    <option value="I">I</option>
+                    <option value="II">II</option>
+                    <option value="III">III</option>
+                </select>
+            </td>
+            <td class="time">
+                <div class="info_button"> <button class="button"> <i class="material-icons">schedule</i></button>
+                    <div class="dropdown_file">
+                <input type="checkbox"><label value="allday">All day</label><br>
+
+                <input type="number" id="timeAllotted_hours" name="timeAllotted_hours" min="0" max="8" placeholder="hrs">
+                <label for="timeAllotted_hours">hrs</label><br>
+
+                <input type="number" id="timeAllotted_minutes" name="timeAllotted_minutes" min="0" max="59" placeholder="mins">  
+                <label for="timeAllotted_minutes">mins</label></div></div>
+            </td>
+            <td class="task">
+                <input type="checkbox">
+                <input type="text">
+            </td>
+            <td class="info">
+                <div class="info_button"> <button class="button"> <i class="material-icons">attachment</i></button>
+                    <div class="dropdown_file">
+                        <input type="file">
+                    </div>
+                </div>
+                    
+                    <div class="info_button"> <button class="button"> <i class="material-icons">link</i></button>
+                        <div class="dropdown_file">
+                            <input type="url" placeholder="URL">
+                        </div>
+                    </div>
+            </td>
+        </tr>
+    <tr>
+            <td class="priority">
+                <select>
+                    <option value="I">I</option>
+                    <option value="II">II</option>
+                    <option value="III">III</option>
+                </select>
+            </td>
+            <td class="time">
+                <div class="info_button"> <button class="button"> <i class="material-icons">schedule</i></button>
+                    <div class="dropdown_file">
+                <input type="checkbox"><label value="allday">All day</label><br>
+
+                <input type="number" id="timeAllotted_hours" name="timeAllotted_hours" min="0" max="8" placeholder="hrs">
+                <label for="timeAllotted_hours">hrs</label><br>
+
+                <input type="number" id="timeAllotted_minutes" name="timeAllotted_minutes" min="0" max="59" placeholder="mins">  
+                <label for="timeAllotted_minutes">mins</label></div></div>
+            </td>
+            <td class="task">
+                <input type="checkbox">
+                <input type="text">
+            </td>
+            <td class="info">
+                <div class="info_button"> <button class="button"> <i class="material-icons">attachment</i></button>
+                    <div class="dropdown_file">
+                        <input type="file">
+                    </div>
+                </div>
+                    
+                    <div class="info_button"> <button class="button"> <i class="material-icons">link</i></button>
+                        <div class="dropdown_file">
+                            <input type="url" placeholder="URL">
+                        </div>
+                    </div>
+            </td>
+        </tr>
+    <tr>
+            <td class="priority">
+                <select>
+                    <option value="I">I</option>
+                    <option value="II">II</option>
+                    <option value="III">III</option>
+                </select>
+            </td>
+            <td class="time">
+                <div class="info_button"> <button class="button"> <i class="material-icons">schedule</i></button>
+                    <div class="dropdown_file">
+                <input type="checkbox"><label value="allday">All day</label><br>
+
+                <input type="number" id="timeAllotted_hours" name="timeAllotted_hours" min="0" max="8" placeholder="hrs">
+                <label for="timeAllotted_hours">hrs</label><br>
+
+                <input type="number" id="timeAllotted_minutes" name="timeAllotted_minutes" min="0" max="59" placeholder="mins">  
+                <label for="timeAllotted_minutes">mins</label></div></div>
+            </td>
+            <td class="task">
+                <input type="checkbox">
+                <input type="text">
+            </td>
+            <td class="info">
+                <div class="info_button"> <button class="button"> <i class="material-icons">attachment</i></button>
+                    <div class="dropdown_file">
+                        <input type="file">
+                    </div>
+                </div>
+                    
+                    <div class="info_button"> <button class="button"> <i class="material-icons">link</i></button>
+                        <div class="dropdown_file">
+                            <input type="url" placeholder="URL">
+                        </div>
+                    </div>
+            </td>
+        </tr>
+    <tr>
+            <td class="priority">
+                <select>
+                    <option value="I">I</option>
+                    <option value="II">II</option>
+                    <option value="III">III</option>
+                </select>
+            </td>
+            <td class="time">
+                <div class="info_button"> <button class="button"> <i class="material-icons">schedule</i></button>
+                    <div class="dropdown_file">
+                <input type="checkbox"><label value="allday">All day</label><br>
+
+                <input type="number" id="timeAllotted_hours" name="timeAllotted_hours" min="0" max="8" placeholder="hrs">
+                <label for="timeAllotted_hours">hrs</label><br>
+
+                <input type="number" id="timeAllotted_minutes" name="timeAllotted_minutes" min="0" max="59" placeholder="mins">  
+                <label for="timeAllotted_minutes">mins</label></div></div>
+            </td>
+            <td class="task">
+                <input type="checkbox">
+                <input type="text">
+            </td>
+            <td class="info">
+                <div class="info_button"> <button class="button"> <i class="material-icons">attachment</i></button>
+                    <div class="dropdown_file">
+                        <input type="file">
+                    </div>
+                </div>
+                    
+                    <div class="info_button"> <button class="button"> <i class="material-icons">link</i></button>
+                        <div class="dropdown_file">
+                            <input type="url" placeholder="URL">
+                        </div>
+                    </div>
+            </td>
+        </tr>
+    <tr>
+            <td class="priority">
+                <select>
+                    <option value="I">I</option>
+                    <option value="II">II</option>
+                    <option value="III">III</option>
+                </select>
+            </td>
+            <td class="time">
+                <div class="info_button"> <button class="button"> <i class="material-icons">schedule</i></button>
+                    <div class="dropdown_file">
+                <input type="checkbox"><label value="allday">All day</label><br>
+
+                <input type="number" id="timeAllotted_hours" name="timeAllotted_hours" min="0" max="8" placeholder="hrs">
+                <label for="timeAllotted_hours">hrs</label><br>
+
+                <input type="number" id="timeAllotted_minutes" name="timeAllotted_minutes" min="0" max="59" placeholder="mins">  
+                <label for="timeAllotted_minutes">mins</label></div></div>
+            </td>
+            <td class="task">
+                <input type="checkbox">
+                <input type="text">
+            </td>
+            <td class="info">
+                <div class="info_button"> <button class="button"> <i class="material-icons">attachment</i></button>
+                    <div class="dropdown_file">
+                        <input type="file">
+                    </div>
+                </div>
+                    
+                    <div class="info_button"> <button class="button"> <i class="material-icons">link</i></button>
+                        <div class="dropdown_file">
+                            <input type="url" placeholder="URL">
+                        </div>
+                    </div>
+            </td>
+        </tr>
+    <tr>
+            <td class="priority">
+                <select>
+                    <option value="I">I</option>
+                    <option value="II">II</option>
+                    <option value="III">III</option>
+                </select>
+            </td>
+            <td class="time">
+                <div class="info_button"> <button class="button"> <i class="material-icons">schedule</i></button>
+                    <div class="dropdown_file">
+                <input type="checkbox"><label value="allday">All day</label><br>
+
+                <input type="number" id="timeAllotted_hours" name="timeAllotted_hours" min="0" max="8" placeholder="hrs">
+                <label for="timeAllotted_hours">hrs</label><br>
+
+                <input type="number" id="timeAllotted_minutes" name="timeAllotted_minutes" min="0" max="59" placeholder="mins">  
+                <label for="timeAllotted_minutes">mins</label></div></div>
+            </td>
+            <td class="task">
+                <input type="checkbox">
+                <input type="text">
+            </td>
+            <td class="info">
+                <div class="info_button"> <button class="button"> <i class="material-icons">attachment</i></button>
+                    <div class="dropdown_file">
+                        <input type="file">
+                    </div>
+                </div>
+                    
+                    <div class="info_button"> <button class="button"> <i class="material-icons">link</i></button>
+                        <div class="dropdown_file">
+                            <input type="url" placeholder="URL">
+                        </div>
+                    </div>
+            </td>
+        </tr>
+    <tr>
+            <td class="priority">
+                <select>
+                    <option value="I">I</option>
+                    <option value="II">II</option>
+                    <option value="III">III</option>
+                </select>
+            </td>
+            <td class="time">
+                <div class="info_button"> <button class="button"> <i class="material-icons">schedule</i></button>
+                    <div class="dropdown_file">
+                <input type="checkbox"><label value="allday">All day</label><br>
+
+                <input type="number" id="timeAllotted_hours" name="timeAllotted_hours" min="0" max="8" placeholder="hrs">
+                <label for="timeAllotted_hours">hrs</label><br>
+
+                <input type="number" id="timeAllotted_minutes" name="timeAllotted_minutes" min="0" max="59" placeholder="mins">  
+                <label for="timeAllotted_minutes">mins</label></div></div>
+            </td>
+            <td class="task">
+                <input type="checkbox">
+                <input type="text">
+            </td>
+            <td class="info">
+                <div class="info_button"> <button class="button"> <i class="material-icons">attachment</i></button>
+                    <div class="dropdown_file">
+                        <input type="file">
+                    </div>
+                </div>
+                    
+                    <div class="info_button"> <button class="button"> <i class="material-icons">link</i></button>
+                        <div class="dropdown_file">
+                            <input type="url" placeholder="URL">
+                        </div>
+                    </div>
+            </td>
+        </tr>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </table>
+</div>
+</section>
+</body>
+<html>
